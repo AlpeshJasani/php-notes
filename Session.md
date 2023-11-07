@@ -1,6 +1,6 @@
 In PHP, sessions are used to preserve data across multiple HTTP requests. Sessions enable you to store and retrieve user-specific data, making them a fundamental feature for building web applications. Below is the syntax for using sessions in PHP:
 
-**Starting a Session:**
+### **Starting a Session:**
 
 To start a session, you typically use the `session_start()` function. Place this function at the beginning of your PHP script, before any HTML output or other headers are sent.
 
@@ -11,7 +11,7 @@ session_start();
 ?>
 ```
 
-**Setting Session Variables:**
+### **Setting Session Variables:**
 
 You can store data in session variables, which are accessible across different pages as long as the session is active. To set a session variable, use the `$_SESSION` superglobal.
 
@@ -23,7 +23,7 @@ $_SESSION['user_id'] = 123;
 ?>
 ```
 
-**Accessing Session Variables:**
+### **Accessing Session Variables:**
 
 You can access session variables using the `$_SESSION` superglobal.
 
@@ -34,7 +34,7 @@ echo 'Welcome, ' . $_SESSION['username'];
 ?>
 ```
 
-**Destroying a Session:**
+### **Destroying a Session:**
 
 To destroy a session and its associated data, use the `session_destroy()` function.
 
@@ -45,7 +45,7 @@ session_destroy();
 ?>
 ```
 
-**Checking if a Session Variable Exists:**
+### **Checking if a Session Variable Exists:**
 
 You can check if a session variable exists using the `isset()` function.
 
@@ -60,7 +60,7 @@ if (isset($_SESSION['username'])) {
 ?>
 ```
 
-**Checking if a Session is Active:**
+### **Checking if a Session is Active:**
 
 You can check if a session is active using the `session_status()` function.
 
@@ -73,5 +73,3 @@ if (session_status() == PHP_SESSION_ACTIVE) {
 }
 ?>
 ```
-
-Please note that for sessions to work, you should have session support enabled in your PHP configuration, and you should start the session on each page where you want to use sessions. Session data is stored on the server, and a session ID is stored as a cookie or passed in the URL to associate the client with the correct session data.
