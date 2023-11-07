@@ -1,5 +1,5 @@
 # php-notes
-My College Notes..
+College Notes.. `xampp`
 
 - test -> All about database connectivity
 - Cookie.md -> syntex
